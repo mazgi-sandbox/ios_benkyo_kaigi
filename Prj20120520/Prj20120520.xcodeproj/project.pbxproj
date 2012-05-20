@@ -13,6 +13,10 @@
 		EB9A58941568E7FF00302BCB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB9A58921568E7FF00302BCB /* InfoPlist.strings */; };
 		EB9A58961568E7FF00302BCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9A58951568E7FF00302BCB /* main.m */; };
 		EB9A589A1568E7FF00302BCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9A58991568E7FF00302BCB /* AppDelegate.m */; };
+		EB9A58A21568E91600302BCB /* SongModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB9A58A01568E91600302BCB /* SongModel.xcdatamodeld */; };
+		EB9A58A51568EBAA00302BCB /* Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9A58A41568EBAA00302BCB /* Scale.m */; };
+		EB9A58A81568EBAB00302BCB /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9A58A71568EBAB00302BCB /* Score.m */; };
+		EB9A58AB1568EBAB00302BCB /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9A58AA1568EBAB00302BCB /* Song.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		EB9A58971568E7FF00302BCB /* Prj20120520-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Prj20120520-Prefix.pch"; sourceTree = "<group>"; };
 		EB9A58981568E7FF00302BCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB9A58991568E7FF00302BCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB9A58A11568E91600302BCB /* SongModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SongModel.xcdatamodel; sourceTree = "<group>"; };
+		EB9A58A31568EBAA00302BCB /* Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scale.h; sourceTree = "<group>"; };
+		EB9A58A41568EBAA00302BCB /* Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scale.m; sourceTree = "<group>"; };
+		EB9A58A61568EBAB00302BCB /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		EB9A58A71568EBAB00302BCB /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		EB9A58A91568EBAB00302BCB /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		EB9A58AA1568EBAB00302BCB /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +86,13 @@
 				EB9A58981568E7FF00302BCB /* AppDelegate.h */,
 				EB9A58991568E7FF00302BCB /* AppDelegate.m */,
 				EB9A58901568E7FF00302BCB /* Supporting Files */,
+				EB9A58A01568E91600302BCB /* SongModel.xcdatamodeld */,
+				EB9A58A91568EBAB00302BCB /* Song.h */,
+				EB9A58AA1568EBAB00302BCB /* Song.m */,
+				EB9A58A61568EBAB00302BCB /* Score.h */,
+				EB9A58A71568EBAB00302BCB /* Score.m */,
+				EB9A58A31568EBAA00302BCB /* Scale.h */,
+				EB9A58A41568EBAA00302BCB /* Scale.m */,
 			);
 			path = Prj20120520;
 			sourceTree = "<group>";
@@ -153,6 +171,10 @@
 			files = (
 				EB9A58961568E7FF00302BCB /* main.m in Sources */,
 				EB9A589A1568E7FF00302BCB /* AppDelegate.m in Sources */,
+				EB9A58A21568E91600302BCB /* SongModel.xcdatamodeld in Sources */,
+				EB9A58A51568EBAA00302BCB /* Scale.m in Sources */,
+				EB9A58A81568EBAB00302BCB /* Score.m in Sources */,
+				EB9A58AB1568EBAB00302BCB /* Song.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +278,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB9A58A01568E91600302BCB /* SongModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB9A58A11568E91600302BCB /* SongModel.xcdatamodel */,
+			);
+			currentVersion = EB9A58A11568E91600302BCB /* SongModel.xcdatamodel */;
+			path = SongModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EB9A587C1568E7FF00302BCB /* Project object */;
 }

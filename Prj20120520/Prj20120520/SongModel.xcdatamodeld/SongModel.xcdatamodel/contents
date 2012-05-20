@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50b" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Scale" representedClassName="Scale" syncable="YES">
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scaleName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="scores" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Score" inverseName="scale" inverseEntity="Score" syncable="YES"/>
+    </entity>
+    <entity name="Score" representedClassName="Score" syncable="YES">
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="scale" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Scale" inverseName="scores" inverseEntity="Scale" syncable="YES"/>
+        <relationship name="song" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Song" inverseName="scores" inverseEntity="Song" syncable="YES"/>
+    </entity>
+    <entity name="Song" representedClassName="Song" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="scores" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Score" inverseName="song" inverseEntity="Score" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Song" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Scale" positionX="106" positionY="-72" width="128" height="90"/>
+        <element name="Score" positionX="-135" positionY="9" width="128" height="90"/>
+    </elements>
+</model>
