@@ -13,6 +13,7 @@
 		EBDA910E15721C9E00779D89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBDA910C15721C9E00779D89 /* InfoPlist.strings */; };
 		EBDA911015721C9E00779D89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDA910F15721C9E00779D89 /* main.m */; };
 		EBDA911415721C9E00779D89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDA911315721C9E00779D89 /* AppDelegate.m */; };
+		EBDA9120157221CE00779D89 /* ARCTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDA911F157221CE00779D89 /* ARCTestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		EBDA911115721C9E00779D89 /* Prj20120527-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Prj20120527-Prefix.pch"; sourceTree = "<group>"; };
 		EBDA911215721C9E00779D89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EBDA911315721C9E00779D89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBDA911E157221CE00779D89 /* ARCTestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCTestObject.h; sourceTree = "<group>"; };
+		EBDA911F157221CE00779D89 /* ARCTestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCTestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 		EBDA910915721C9E00779D89 /* Prj20120527 */ = {
 			isa = PBXGroup;
 			children = (
+				EBDA911D1572219700779D89 /* ARC */,
 				EBDA911215721C9E00779D89 /* AppDelegate.h */,
 				EBDA911315721C9E00779D89 /* AppDelegate.m */,
 				EBDA910A15721C9E00779D89 /* Supporting Files */,
@@ -88,6 +92,15 @@
 				EBDA911115721C9E00779D89 /* Prj20120527-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBDA911D1572219700779D89 /* ARC */ = {
+			isa = PBXGroup;
+			children = (
+				EBDA911E157221CE00779D89 /* ARCTestObject.h */,
+				EBDA911F157221CE00779D89 /* ARCTestObject.m */,
+			);
+			name = ARC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +166,7 @@
 			files = (
 				EBDA911015721C9E00779D89 /* main.m in Sources */,
 				EBDA911415721C9E00779D89 /* AppDelegate.m in Sources */,
+				EBDA9120157221CE00779D89 /* ARCTestObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +235,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Prj20120527/Prj20120527-Prefix.pch";
 				INFOPLIST_FILE = "Prj20120527/Prj20120527-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -232,6 +247,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Prj20120527/Prj20120527-Prefix.pch";
 				INFOPLIST_FILE = "Prj20120527/Prj20120527-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
